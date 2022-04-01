@@ -8,24 +8,39 @@ body {
   }
 
 .header {
-    
+  font-size: 16px;
+  line-height: 1;
+  flex-wrap: wrap;
+  text-align: center;
 }  
 
 
 .contentCard {
-
+  font-size: 16px;
+    line-height: 1;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 
 .citiesList {
-
+  font-size: 16px;
+    line-height: 1;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .weatherCards {
-
+  font-size: 16px;
+    line-height: 1;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 
 .forecastWeatherCard {
-
+  font-size: 16px;
+    line-height: 1;
+    flex-wrap: wrap;
+    text-align: center;
 }
