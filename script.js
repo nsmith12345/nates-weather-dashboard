@@ -7,11 +7,24 @@ fetch(requestUrl)
       document.location.replace('./404.html') // If fails to connect, this will be displayed 
     } else {
       return response.json(); // If it works, JSON data will be displayed
-    }
-    
+    }    
 })
 .then(function(date){
     console.log(date);
+});
+
+.then(function(data) {
+    // Disply in HTML here
+    var docArray = data.response.docs;
+    for(var i = 0; i < docArray.length; i++) {
+        var listItem = document.createElement("li");
+        listItem.textContent = docArray[i].description ;
+        listEl.appendChild(listItem);
+    }
+})
+.catch(function(error) {
+    // In case there is an error
+    console.log(error);
 });
 
 //***********************Variables*******************************/
