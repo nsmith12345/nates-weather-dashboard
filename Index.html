@@ -16,27 +16,85 @@
 </head>
 
 <body>
-    <header class="jumbotron">
-        <h1> Weather Dashboard</h1>
-
-    </header>
-
+     
     <div class="container">
-        <div id="citySearch" class="row citySearch">
-            <div class="col-md-1 city">
-            City Search
+    <!-- Jumbotron -->
+    <div class="jumbotron-fluid bg-primary text-dark text-center">
+            <div class="container">
+                <h1 class="display-2">Weather Dashboard</h1>
+            </div>
         </div>
-    <div id="weatherCards" class="row weatherCards">
-            <div class="col-md-2 weatherCards">
-        <div class="dayOne">one</div>
-        <div class="dayTwo">two</div>
-        <div class="dayThree">three</div>
-        <div class="dayFour">four</div>
-        <div class="dayFive">five</div>
+    <!-- Row One -->
+    <div class="row">
+    <!-- Column One Within Row One-->
+        <div class="col-3-md-2 bg-light text-dark">
+            <h2>City Search</h2>     
+            <div class="input-group mb-1">
+                <input type="text" class="city-decision" id="city-finder">
+                <button type="button" class="btn btn-success">Get Weather</button>
+                </div>
+            </div>
+    <!-- City History Box -->
+    <div class="card" style="width: 16rem;">
+        <ul id="city-list" class="list-cities list-cities-flush">
+        </ul>
+    </div>
+    </div>
+    <!-- Column Two in Row One -->
+    <div class="col-8-md-2">
+    <!-- Row One in Column Two -->
+    <div class="row-12">
+        <div class="card">
+            <div id="weather-today" class="card-body">
+                <!-- City Search 
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p> -->
+            </div>
         </div>
-        <div id="forecastWeatherCard">
-        </div>     
-    </div> 
+    </div>            
+    <!-- Row two in Column Two -->
+        <br>
+        <div class="row-12">
+            <h2>Five Day Forecast</h2>
+        </div>
+    <!-- Row 3 in Column Two -->
+        </br>
+        </div id="boxes" class="row">
+        <!-- Light Blue Weather Box 
+        <div id="box2" class="col-2-md-2 bg-info">
+            <h3></h3> -->
+            <!-- <img>
+           <p></p>
+           <p></p> -->
+         <!-- </div> -->
+         <!-- Light Blue Weather Box Two -->
+         <!-- <div class="col-2-md-2 bg-info"> -->
+         
+        <!-- </div> -->
+        <!-- Light Blue Weather Box Three -->
+        <!-- <div class="col-2-md-2 bg-info">
+          <h3></h3> -->
+         
+        <!-- </div> -->
+        <!-- Light Blue Weather Box Four -->
+        <!-- <div class="col-2-md-2 bg-info">
+         <h3></h3> -->
+         
+       <!-- </div> -->
+       <!-- Light Blue Weather Box Five -->
+       <!-- <div class="col-2-md-2 bg-info"> 
+        <h3></h3> -->
+      <!-- </div> -->
+       
+        </div>
+    </div>
+  </div>
+ 
+ </div>
+  
     <!-- Open Weather API-->
     <script src="https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=877e9b68857572ca2ce6ce879c6aa00e"></script>
     <!-- Moment js -->
