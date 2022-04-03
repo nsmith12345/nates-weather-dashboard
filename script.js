@@ -9,11 +9,9 @@ fetch(requestUrl)
       return response.json(); // If it works, JSON data will be displayed
     }    
 })
-.then(function(date){
-    console.log(date);
-});
 
 .then(function(data) {
+    console.log(date);
     // Disply in HTML here
     var docArray = data.response.docs;
     for(var i = 0; i < docArray.length; i++) {
@@ -28,13 +26,13 @@ fetch(requestUrl)
 });
 
 //***********************Variables*******************************/
-var citiesList = document.querySelector("#citiesList"); // Will 
-var currentDate = document.querySelector("#currentDate");
-var nameOfCity = document.querySelector("#nameOfCity"); 
-var temperature = document.querySelector("#temperature");
-var highTemperature = document.querySelector("#highTemperature"); // Will 
-var lowTemperature = document.querySelector("#lowTemperature");
-var humidity = document.querySelector("#humidity");
-var uvIndex = document.querySelector("#uvIndex"); 
-var todayWeather = document.querySelector("#todayWeather"); 
+var citiesList = document.querySelector(".citiesList"); // Will 
+var currentDate = document.querySelector(".currentDate");
+var nameOfCity = document.querySelector(".nameOfCity"); 
+var temperature = document.querySelector(".temperature");
+var highTemperature = document.querySelector(".highTemperature"); // Will 
+var lowTemperature = document.querySelector(".lowTemperature");
+var humidity = document.querySelector(".humidity");
+var uvIndex = document.querySelector(".uvIndex"); 
+var todayWeather = document.querySelector(".todayWeather"); 
 var currentHour = moment().hour(); //Stores the current hour for comparison of each row.
