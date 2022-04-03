@@ -7,7 +7,7 @@ body {
     background-color:aqua  
   }
 
-.header {
+.contentCard  {
   font-size: 16px;
   line-height: 1;
   flex-wrap: wrap;
