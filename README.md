@@ -37,6 +37,7 @@ Open Weather Map API
 Website Link:
 
 Screen Shot:
+![#Burger-App](./images/Weather%20Dashboard%20Pic.jpeg) 
 
 Made By:
 
